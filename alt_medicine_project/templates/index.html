@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alternative Medicine Recommendation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f0f4f8;
+      --text: #2c3e50;
+      --card: #ffffff;
+      --accent: #2ecc71;
+    }
+
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f1f1f1;
+      --card: #2c2c2c;
+      --accent: #27ae60;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      padding: 15px 25px;
+      background: var(--accent);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .dark-toggle {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: var(--card);
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: var(--text);
+      margin-top: 0;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: var(--accent);
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1abc9c;
+    }
+
+    #botResponse {
+      margin-top: 15px;
+      background: #eafaf1;
+      padding: 12px;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+      max-height: 180px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    table th {
+      background: var(--accent);
+      color: white;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .common-remedies {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.common-remedies h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.remedy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.remedy-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.remedy-card:hover {
+  transform: translateY(-5px);
+}
+
+.remedy-card h3 {
+  font-size: 20px;
+  color: #008060;
+  margin-bottom: 10px;
+}
+
+.remedy-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>🌿 Alt-Med Recommender</strong></div>
+    <div>
+      <span>User: guest</span>
+      <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Mode</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Welcome to the Alternative Medicine System</h2>
+
+    <h3>🧠 Ask the AI Bot</h3>
+    <input type="text" id="userMsg" placeholder="e.g., What is good for migraines?" />
+    <button onclick="askBot()">Ask</button>
+    <div id="botResponse"></div>
+
+    <hr />
+
+    <h3>📝 Submit Feedback</h3>
+    <input type="text" id="condition" placeholder="Condition (e.g., Headache)" />
+    <input type="text" id="remedy" placeholder="Remedy (e.g., Ginger tea)" />
+    <input type="number" id="rating" min="1" max="5" placeholder="Rating (1–5)" />
+    <input type="text" id="comment" placeholder="Comment (optional)" />
+    <button onclick="submitFeedback()">Submit Feedback</button>
+
+    <hr />
+
+    <section class="common-remedies">
+  <h2>🌿 Common Natural Remedies</h2>
+  <div class="remedy-grid">
+    <div class="remedy-card">
+      <h3>Ginger Tea</h3>
+      <p>Used for cold, sore throat, and nausea relief.</p>
+    </div>
+    <div class="remedy-card">
+      <h3>Peppermint Oil</h3>
+      <p>Effective for headaches and muscle pain relief.</p>
+    </div>
+    <div class="remedy-card">
+      <h3>Turmeric Milk</h3>
+      <p>Boosts immunity and helps with inflammation.</p>
+    </div>
+    <div class="remedy-card">
+      <h3>Aloe Vera</h3>
+      <p>Soothes skin burns and improves digestion.</p>
+    </div>
+  </div>
+</section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    async function askBot() {
+      const msg = document.getElementById('userMsg').value.trim();
+      if (!msg) return alert("Please enter a question.");
+      const res = await fetch('/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg })
+      });
+      const data = await res.json();
+      const responseBox = document.getElementById('botResponse');
+      responseBox.innerText += `\n\n🧠 Bot: ${data.response}`;
+    }
+
+    async function submitFeedback() {
+      const condition = document.getElementById('condition').value.trim();
+      const remedy = document.getElementById('remedy').value.trim();
+      const rating = parseInt(document.getElementById('rating').value);
+      const comment = document.getElementById('comment').value.trim();
+
+      if (!condition || !remedy || !rating) {
+        return alert("Please fill out condition, remedy, and rating.");
+      }
+
+      const data = { condition, remedy, rating, comment };
+      await fetch('/submit_feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      alert('✅ Feedback submitted!');
+      document.getElementById('condition').value = '';
+      document.getElementById('remedy').value = '';
+      document.getElementById('rating').value = '';
+      document.getElementById('comment').value = '';
+    }
+
+    async function loadRemedies() {
+      const res = await fetch('/get_remedies', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: "guest" })
+      });
+      const data = await res.json();
+      const table = document.getElementById('remedyTable');
+      const tbody = table.querySelector('tbody');
+      tbody.innerHTML = '';
+      data.forEach(item => {
+        const row = `<tr><td>${item.condition}</td><td>${item.remedies.join(', ')}</td></tr>`;
+        tbody.innerHTML += row;
+      });
+      table.style.display = 'table';
+    }
+  </script>
+</body>
+</html>

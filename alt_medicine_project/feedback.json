@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "headache",
+    "remedy": "Ginger tea",
+    "rating": 5,
+    "comment": "It worked well!"
+  },
+  {
+    "condition": "Heache",
+    "remedy": "Giner tea",
+    "rating": 5,
+    "comment": "Wonderful"
+  },
+  {
+    "condition": "",
+    "remedy": "",
+    "rating": 1,
+    "comment": ""
+  }
+]

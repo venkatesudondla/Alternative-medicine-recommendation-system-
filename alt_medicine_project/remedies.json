@@ -1,0 +1,293 @@
+[
+  {
+    "condition": "headache",
+    "remedies": ["Ginger tea", "Peppermint oil", "Acupressure"]
+  },
+  {
+    "condition": "cold",
+    "remedies": ["Honey and lemon", "Tulsi tea", "Steam inhalation"]
+  },
+  {
+    "condition": "stomach pain",
+    "remedies": [
+      "Eat gentle foods like bananas",
+      "Maintain hydration",
+      "Use a hot water bottle or warm bath"
+    ]
+  },
+  {
+    "condition": "itching skin",
+    "remedies": [
+      "Oatmeal baths",
+      "Cool compresses",
+      "Moisturize with aloe vera or coconut oil"
+    ]
+  },
+  {
+    "condition": "migraine headache",
+    "remedies": [
+      "Avoid bright light and sounds",
+      "Stay hydrated",
+      "Eat nutrient-rich foods",
+      "Inhale steam with turmeric powder"
+    ]
+  },
+  {
+    "condition": "cold and cough",
+    "remedies": [
+      "Warm fluids like herbal teas or broth",
+      "Plenty of rest",
+      "Steam inhalation or humidifier for congestion"
+    ]
+  },
+  {
+    "condition": "throat pain",
+    "remedies": [
+      "Warm saltwater gargles",
+      "Honey and chamomile tea",
+      "Hydrate with warm fluids"
+    ]
+  },
+  {
+    "condition": "lower back pain",
+    "remedies": [
+      "Gentle exercises (child pose, upward-facing dog, triangle, downward-facing dog, pigeon)",
+      "Heat and cold therapy",
+      "Stress management techniques"
+    ]
+  },
+  {
+    "condition": "diabetes",
+    "remedies": [
+      "Fenugreek seeds soaked overnight",
+      "Cinnamon tea",
+      "Bitter gourd juice",
+      "Exercise and low-carb diet"
+    ]
+  },
+  {
+    "condition": "pimples",
+    "remedies": [
+      "Apply aloe vera gel",
+      "Use tea tree oil",
+      "Avoid oily foods",
+      "Wash face twice daily"
+    ]
+  },
+  {
+    "condition": "dandruff",
+    "remedies": [
+      "Neem leaf paste",
+      "Coconut oil with lemon juice",
+      "Aloe vera scalp massage",
+      "Apple cider vinegar rinse"
+    ]
+  },
+  {
+    "condition": "hairfall",
+    "remedies": [
+      "Apply onion juice to scalp",
+      "Coconut oil massage",
+      "Amla and hibiscus powder pack",
+      "Balanced diet with proteins"
+    ]
+  },
+  {
+    "condition": "open pores",
+    "remedies": [
+      "Apply ice cubes",
+      "Use tomato juice",
+      "Aloe vera gel mask",
+      "Multani mitti (Fuller’s earth) pack"
+    ]
+  },
+  {
+    "condition": "black pores",
+    "remedies": [
+      "Steam face weekly",
+      "Use baking soda scrub",
+      "Clay masks",
+      "Avoid heavy makeup"
+    ]
+  },
+  {
+    "condition": "knee pain",
+    "remedies": [
+      "Turmeric milk",
+      "Hot and cold compress",
+      "Gentle yoga/stretching",
+      "Massage with mustard oil"
+    ]
+  },
+  {
+    "condition": "joint pains",
+    "remedies": [
+      "Epsom salt bath",
+      "Omega-3 rich foods",
+      "Massage with essential oils",
+      "Turmeric and ginger tea"
+    ]
+  },
+  {
+    "condition": "heart pain",
+    "remedies": [
+      "Practice deep breathing",
+      "Drink hawthorn tea",
+      "Avoid heavy meals and caffeine",
+      "Consult doctor immediately"
+    ]
+  },
+  {
+    "condition": "neck pain",
+    "remedies": [
+      "Cold and heat therapy",
+      "Neck stretching exercises",
+      "Epsom salt soak",
+      "Apply turmeric paste"
+    ]
+  },
+  {
+    "condition": "back pain",
+    "remedies": [
+      "Use hot compress",
+      "Child's pose yoga",
+      "Turmeric and milk",
+      "Gentle massage"
+    ]
+  },
+  {
+    "condition": "toe pain",
+    "remedies": [
+      "Foot soak with Epsom salt",
+      "Stretching and rest",
+      "Wear comfortable shoes",
+      "Massage with lavender oil"
+    ]
+  },
+  {
+    "condition": "dizziness",
+    "remedies": [
+      "Stay hydrated",
+      "Ginger tea",
+      "Deep breathing",
+      "Avoid sudden position changes"
+    ]
+  },
+  {
+    "condition": "vomits",
+    "remedies": [
+      "Ginger tea",
+      "Lemon water",
+      "Mint leaves",
+      "Avoid strong smells and spicy food"
+    ]
+  },
+  {
+    "condition": "dark circles on eyes",
+    "remedies": [
+      "Cucumber slices",
+      "Cold tea bags",
+      "Almond oil",
+      "Adequate sleep"
+    ]
+  },
+  {
+    "condition": "black lips",
+    "remedies": [
+      "Lemon and honey scrub",
+      "Rose petal paste",
+      "Beetroot balm",
+      "Avoid smoking"
+    ]
+  },
+  {
+    "condition": "hormones imbalance",
+    "remedies": [
+      "Flaxseeds and sesame seeds",
+      "Ashwagandha supplements",
+      "Yoga and meditation",
+      "Avoid refined sugar"
+    ]
+  },
+  {
+    "condition": "pcod",
+    "remedies": [
+      "Cinnamon and fenugreek seeds",
+      "Regular exercise",
+      "Avoid processed sugar",
+      "Spearmint tea"
+    ]
+  },
+  {
+    "condition": "cancer",
+    "remedies": [
+      "Turmeric with black pepper",
+      "Green tea",
+      "Broccoli and leafy greens",
+      "Consult oncologist for verified treatment"
+    ]
+  },
+  {
+    "condition": "blindness",
+    "remedies": [
+      "Eat carrots and leafy greens",
+      "Omega-3s from fish",
+      "Amla juice",
+      "Avoid excessive screen time"
+    ]
+  },
+  {
+    "condition": "teeth pain",
+    "remedies": [
+      "Clove oil",
+      "Saltwater rinse",
+      "Garlic paste",
+      "Cold compress"
+    ]
+  },
+  {
+    "condition": "stones in kidney",
+    "remedies": [
+      "Barley water",
+      "Basil juice",
+      "Hydration with plain water",
+      "Pomegranate juice"
+    ]
+  },
+  {
+    "condition": "gastric",
+    "remedies": [
+      "Fennel seeds",
+      "Ajwain (carom seeds)",
+      "Buttermilk with hing",
+      "Avoid spicy food"
+    ]
+  },
+  {
+    "condition": "elbow pain",
+    "remedies": [
+      "Ice packs",
+      "Gentle stretching",
+      "Massage with turmeric oil",
+      "Epsom salt compress"
+    ]
+  },
+  {
+    "condition": "elbow and neck darkness",
+    "remedies": [
+      "Lemon scrub",
+      "Yogurt and turmeric paste",
+      "Aloe vera gel",
+      "Regular exfoliation"
+    ]
+  },
+  {
+    "condition": "obesity",
+    "remedies": [
+      "Lukewarm lemon water in morning",
+      "Cinnamon and honey tea",
+      "Exercise daily",
+      "Avoid sugar and junk food"
+    ]
+  }
+]
